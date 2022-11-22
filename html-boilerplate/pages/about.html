@@ -5,10 +5,78 @@
         <link rel="stylesheet" href="/css/swamp.css">
         <meta charset="UTF-8">
         <div id="title">the swamp</div>
+        <link rel="icon" href="../images/shrek.png" type="image/x-icon">
+        <title>le swamp</title>
+                <style>
+                    img.shrek { 
+                    width:230px;
+                    height:307px;
+                    display:none; 
+                }
+                </style>
+
+                <script type="text/javascript">
+                    var MAX_PIC = 15;
+                    var x;
+                    
+                    function changepics() {
+                        x = 1;
+                        setInterval(nextpic, 433);
+                    }
+                    
+                    function nextpic() {
+                        var prev, next;
+                    
+                        if (x >= MAX_PIC) {
+                            prev = document.getElementById('shrek' + MAX_PIC.toString());
+                            next = document.getElementById('shrek1');
+                            x = 1;
+                        } else {
+                            prev = document.getElementById('shrek' + (x++).toString());
+                            next = document.getElementById('shrek' + x.toString());
+                        }
+                        prev.style.display = "none";
+                        next.style.display = "block";
+                        try {
+                            document.getElementsByClshrekName("pagetitle")[0].innerHTML = captions[x -1];
+                        } catch(err) {}
+                    }
+                    changepics();
+                    </script>
+                      <style>
+                        .box {
+                          width:50%;
+                          height: 500px;
+                        }
+                        img {
+                          width: 100%;
+                          height: 100%;
+                        }
+                      </style>
     </head>
     <body>
-        <!--would be cool if the page would be green in the future-->
-        <div><h1>What are you doing in my swamp!?</h1></div>
-        <a href="/index.html"><h4>back to frontpage</h4></a>
-    </body>
+
+        <audio autoplay> <source <img src="/audio/shrektechno.webm"></audio>
+       <div class="pagetitle">GET OUT OF MUH SWAMP REEEEEEE</div>
+        <center> 
+            <div class="box">
+        <img id="shrek1" clshrek="shrek" <img src="../images/shrek1.jpg" style="display:block;"/>
+<img id="shrek2" clshrek="shrek" <img src="../images/shrek2.jpg"/>
+<img id="shrek3" clshrek="shrek" <img src="../images/shrek3.jpg"/>
+<img id="shrek4" clshrek="shrek" <img src="../images/shrek4.jpg"/>
+<img id="shrek5" clshrek="shrek" <img src="../images/shrek5.jpg"/>
+<img id="shrek6" clshrek="shrek" <img src="../images/shrek6.jpg"/>
+<img id="shrek7" clshrek="shrek" <img src="../images/shrek7.jpg"/>
+<img id="shrek8" clshrek="shrek" <img src="../images/shrek8.jpg"/>
+<img id="shrek9" clshrek="shrek" <img src="../images/shrek9.jpg"/>
+<img id="shrek10" clshrek="shrek" <img src="../images/shrek10.jpg"/>
+<img id="shrek11" clshrek="shrek" <img src="../images/shrek11.jpg"/>
+<img id="shrek12" clshrek="shrek" <img src="../images/shrek12.jpg"/>
+<img id="shrek13" clshrek="shrek" <img src="../images/shrek13.jpeg"/>
+<img id="shrek14" clshrek="shrek" <img src="../images/shrek14.jpg"/>
+<img id="shrek15" clshrek="shrek" <img src="../images/shrek15.jpg"/>
+</div>
+       </center>
+       <br>
+        <a href="/index.html"><h4>back to frontpage</h4></a    </body>
     </html>
